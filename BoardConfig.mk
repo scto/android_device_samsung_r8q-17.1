@@ -16,7 +16,7 @@
 # Inherit common board flags
 -include device/samsung/sm8150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/beyond0qlte
+DEVICE_PATH := device/samsung/beyond1qlte
 
 WITH_GMS := true
 
@@ -27,8 +27,14 @@ TARGET_FLATTEN_APEX := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
+# FOD
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.beyond1qlte
+
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_beyond0qlte_defconfig
+TARGET_KERNEL_CONFIG := lineage_beyond1qlte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8150-common
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_KERNEL_BASE := 0x00000000
@@ -62,9 +68,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Root
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
-
-# Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)

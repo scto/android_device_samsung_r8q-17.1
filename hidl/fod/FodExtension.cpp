@@ -1,11 +1,5 @@
 /*
- *
- *  Copyright (c) 2013, The Linux Foundation. All rights reserved.
- *  Not a Contribution, Apache license notifications and license are retained
- *  for attribution purposes only.
- *
- * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +14,14 @@
  * limitations under the License.
  */
 
-#ifndef _BDROID_BUILDCFG_H
-#define _BDROID_BUILDCFG_H
+#include <compositionengine/FodExtension.h>
 
-#define BTM_DEF_LOCAL_NAME "Galaxy S10"
+uint32_t getFodZOrder(uint32_t z, bool touched) {
+    (void) touched;
+    return z;
+}
 
-#define BLE_VND_INCLUDED    TRUE
-#define DISABLE_WBS TRUE
-
-#endif
+uint64_t getFodUsageBits(uint64_t usageBits, bool touched) {
+    if (touched) usageBits |= 0x400000000LL;
+    return usageBits;
+}

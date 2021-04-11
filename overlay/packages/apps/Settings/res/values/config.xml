@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2009 The Android Open Source Project
+<!--
+     Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,8 +15,7 @@
      limitations under the License.
 -->
 
-<resources>
-    <!-- Fingerprint -->
-    <item name="fingerprint_sensor_location_fraction_x" type="fraction">50.25%</item>
-    <item name="fingerprint_sensor_location_fraction_y" type="fraction">51.25%</item>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <dimen name="fingerprint_dot_radius">8dp</dimen>
+    <item name="fingerprint_sensor_location_fraction_y" type="fraction">85%</item>
 </resources>

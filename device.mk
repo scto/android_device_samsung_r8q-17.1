@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/beyond0qlte
+DEVICE_PATH := device/samsung/beyond1qlte
 
 # Inherit common device configuration
 $(call inherit-product, device/samsung/sm8150-common/common.mk)
@@ -30,17 +30,20 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/audio_policy_configuration.xml
 
+# Display
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.lcd_density=560
+
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.samsung
+    lineage.biometrics.fingerprint.inscreen@1.0-service.beyond1qlte
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Init
 PRODUCT_PACKAGES += \
 	fstab.qcom
-
-# Lights
-#PRODUCT_PACKAGES += \
-#	android.hardware.light-service.sm8150
 
 # Skip Mount
 PRODUCT_PACKAGES += \
