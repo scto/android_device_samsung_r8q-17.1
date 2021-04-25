@@ -18,7 +18,7 @@
 
 DEVICE_PATH := device/samsung/beyond1qlte
 
-WITH_GMS := true
+#WITH_GMS := true
 
 # APEX
 #DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -71,4 +71,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_beyond1qlte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_beyond1qlte
 

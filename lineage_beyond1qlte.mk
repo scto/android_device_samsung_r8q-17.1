@@ -39,3 +39,10 @@ TARGET_SCREEN_WIDTH := 1440
 
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRODUCT_DEVICE=beyond1qlte \
+	TARGET_BOOTLOADER_BOARD_NAME=msmnile \
+	PRODUCT_NAME=beyond1qltesq \
+	PRIVATE_BUILD_DESC="beyond1qltesq-user 11 RP1A.200720.012 G973USQS4FUA1 release-keys"
+
+BUILD_FINGERPRINT := "samsung/beyond1qltesq/beyond1q:11/RP1A.200720.012/G973USQS4FUA1:user/release-keys"
