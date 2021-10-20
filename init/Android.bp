@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2021 The LineageOS Project
+// Copyright (C) 2020-2021 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_beyond1qlte",
+    name: "libinit_y2q",
     recovery_available: true,
-    srcs: ["init_beyond1qlte.cpp"],
+    srcs: ["init_y2q.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"

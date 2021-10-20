@@ -1,5 +1,7 @@
 /*
-   Copyright (c) 2014, The Linux Foundation. All rights reserved.
+   Copyright (c) 2016, The Linux Foundation. All rights reserved.
+   Copyright (c) 2017-2021, The LineageOS Project. All rights reserved.
+
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -12,6 +14,7 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
+
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -56,14 +59,14 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "beyond0qltesq-user 11 RP1A.200720.012 G973USQS4FUA1 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.build.description", "y2qsqw-user 11 RP1A.200720.012 G986USQS2DUI5 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/y2qsqw/y2q:11/RP1A.200720.012/G986USQS2DUI5:user/release-keys");
 
     // privapp permisison control
     property_override("ro.control_privapp_permissions", "log");
     
-    property_override("ro.product.system.model", "SM-G973U");
-    property_override("ro.product.vendor.model", "SM-G973U");
-    property_override("ro.product.product.model", "SM-G973U");
-    property_override("ro.product.odm.model", "SM-G973U");
+    property_override("ro.product.system.model", "SM-G986U");
+    property_override("ro.product.vendor.model", "SM-G986U");
+    property_override("ro.product.product.model", "SM-G986U");
+    property_override("ro.product.odm.model", "SM-G986U");
 }

@@ -1,4 +1,4 @@
 hidl_package_root {
     name: "vendor.samsung.hardware",
-    path: "device/samsung/beyond1qlte/interfaces",
+    path: "device/samsung/y2q/interfaces",
 }

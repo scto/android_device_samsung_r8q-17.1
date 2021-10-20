@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_beyond1qlte.mk
+    $(LOCAL_DIR)/lineage_y2q.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_beyond1qlte-eng \
-    lineage_beyond1qlte-userdebug \
-    lineage_beyond1qlte-user
+    lineage_y2q-eng \
+    lineage_y2q-userdebug \
+    lineage_y2q-user
