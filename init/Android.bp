@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_y2q",
+    name: "libinit_r8q",
     recovery_available: true,
-    srcs: ["init_y2q.cpp"],
+    srcs: ["init_r8q.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"

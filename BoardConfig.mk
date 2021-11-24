@@ -16,25 +16,22 @@
 # Inherit common board flags
 -include device/samsung/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/y2q
+DEVICE_PATH := device/samsung/r8q
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
-
-# APN (imported from stock)
-CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/sprint_apns.xml
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.y2q
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.r8q
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/lineage_y2q_defconfig
+TARGET_KERNEL_CONFIG := vendor/lineage_r8q_defconfig
 
 # Partitions
 TARGET_COPY_OUT_PRODUCT := system/product
@@ -46,4 +43,4 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_y2q
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_r8q

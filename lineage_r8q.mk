@@ -18,27 +18,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from r5q device
-$(call inherit-product, device/samsung/y2q/device.mk)
+$(call inherit-product, device/samsung/r8q/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_y2q
-PRODUCT_DEVICE := y2q
+PRODUCT_NAME := lineage_r8q
+PRODUCT_DEVICE := r8q
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-G986U
+PRODUCT_MODEL := SM-G781B
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=y2q \
-    PRODUCT_NAME=y2q \
-    PRIVATE_BUILD_DESC="y2qsq-user 11 RP1A.200720.012 G986USQS2DUI5 release-keys" \
-    BUILD_DISPLAY_ID="$(BUILD_ID).G986USQS2DUI5" \
-    BUILD_NUMBER=G986USQS2DUI5 \
+    PRODUCT_DEVICE=r8q \
+    PRODUCT_NAME=r8q \
+    PRIVATE_BUILD_DESC="r8q-user 11 RP1A.200720.012 G781BXXS4CUI1 release-keys" \
+    BUILD_DISPLAY_ID="$(BUILD_ID).G781BXXS4CUI1" \
+    BUILD_NUMBER=G781BXXS4CUI1 \
     TARGET_BOOTLOADER_BOARD_NAME=kona \
-    TARGET_BUILD_FLAVOR="y2q-$(TARGET_BUILD_VARIANT)"
+    TARGET_BUILD_FLAVOR="r8q-$(TARGET_BUILD_VARIANT)"
 
-BUILD_FINGERPRINT := "samsung/y2qsq/y2q:11/RP1A.200720.012/G986USQS2DUI5:user/release-keys"
+BUILD_FINGERPRINT := "samsung/SM-G781B/SM-G781B:11/RP1A.200720.012/G781BXXS4CUI1:user/release-keys"

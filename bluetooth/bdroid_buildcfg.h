@@ -23,7 +23,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "Galaxy S20+"
+#define BTM_DEF_LOCAL_NAME "Galaxy S20FE 5G"
 
 #define BLE_VND_INCLUDED    TRUE
 #define DISABLE_WBS TRUE

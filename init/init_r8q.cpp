@@ -59,14 +59,14 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "y2qsqw-user 11 RP1A.200720.012 G986USQS2DUI5 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/y2qsqw/y2q:11/RP1A.200720.012/G986USQS2DUI5:user/release-keys");
+    property_override("ro.build.description", "r8q-user 11 RP1A.200720.012 G781BXXS4CUI1 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/SM-G781B/SM-G781B:11/RP1A.200720.012/G781BXXS4CUI1:user/release-keys");
 
     // privapp permisison control
     property_override("ro.control_privapp_permissions", "log");
     
-    property_override("ro.product.system.model", "SM-G986U");
-    property_override("ro.product.vendor.model", "SM-G986U");
-    property_override("ro.product.product.model", "SM-G986U");
-    property_override("ro.product.odm.model", "SM-G986U");
+    property_override("ro.product.system.model", "SM-G781B");
+    property_override("ro.product.vendor.model", "SM-G781B");
+    property_override("ro.product.product.model", "SM-G781B");
+    property_override("ro.product.odm.model", "SM-G781B");
 }
