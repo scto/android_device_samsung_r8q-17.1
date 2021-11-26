@@ -34,7 +34,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 TARGET_KERNEL_CONFIG := vendor/lineage_r8q_defconfig
 
 # Partitions
-TARGET_COPY_OUT_PRODUCT := system/product
+TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xxhdpi
