@@ -35,7 +35,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.r8q
-
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
@@ -50,7 +49,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Skip Mount
 PRODUCT_PACKAGES += \
